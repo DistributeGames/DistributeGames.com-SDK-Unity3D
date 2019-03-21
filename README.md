@@ -1,52 +1,54 @@
 # DistributeGames.com-SDK
-This repository contains the DistributeGames.com SDK for HTML5 games. This allows you to display advertisements in the games published within the DistributeGames.com network. https://DistributeGames.com
+This repository contains the DistributeGames.com SDK for WebGL Unity3D games. This allows you to display advertisements in the games published within the DistributeGames.com network. https://DistributeGames.com
 
 
 # STEP 1:
-# HTML5 SDK - Implementation
-<p>Add following rows into your index.html file (head section or body section). Fill gameId and use SDK events when you need it (mute audio, pause game and after that resume game logic).</p>
-<p>This will initialize DistributeGames.com SDK.</p>
-
-<pre><code><script type = "text/javascript" >
-   window.SDK_OPTIONS = {
-      gameId: "your_game_id_here",
-      onEvent: function (a) {
-         switch (a.name) {
-            case "SDK_GAME_PAUSE":
-               // pause game logic / mute audio
-               break;
-            case "SDK_GAME_START":
-               // advertisement done, resume game logic and unmute audio
-               break;
-            case "SDK_READY":
-               // when sdk is ready
-               break;
-            case "SDK_ERROR":
-               // when sdk get error
-               break;
-         }
-      }
-   };
-(function (a, b, c) {
-   var d = a.getElementsByTagName(b)[0];
-   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.distributegames.com/sdk.js", d.parentNode.insertBefore(a, d))
-})(document, "script", "distributegames-sdk"); 
-</script></code></pre>
+<p>Import the .unitypackage into your game. </p>
 
 # STEP 2:
-# Invoke an advertisement
-Now you must call sdk.showBanner() at the appropriate time in your game to show ads.
-
-<pre><code>sdk.showBanner();</code></pre>
+Drag the prefab "DistributeGames" into your scene. 
 
 # STEP 3:
-Now you can upload the game, Go to Game Management > My games > Select you game > Drop file to upload.
+Copy your GAME_ID in your DistributeGames developer's control panel (in the Game Management > My games > Our game), at http://distributegames.com/account/
 
 # STEP 4:
-Verify SDK by click on button "Verify Game". This shows you that you have correctly done integration and ready to publish.
+Open the prefab and replace the GAME_ID values with your own keys. 
 
 # STEP 5:
-Submit game - click on button REQUEST ACTIVATION
+Use DistributeGames.Instance.ShowAd() to show an advertisement. 
+
+# STEP 6:
+Make use of the events DistributeGames.OnResumeGame and DistributeGames.OnPauseGame for resuming/pausing your game in between ads.
+
+# Example:
+<pre>public class ExampleClass: MonoBehaviour {
+	void Awake()
+	{
+	  DistributeGames.OnResumeGame += ResumeGame;
+	  DistributeGames.OnPauseGame += PauseGame;
+	}
+	
+	void OnDestroy()
+	{
+	  DistributeGames.OnResumeGame -= ResumeGame;
+	  DistributeGames.OnPauseGame -= PauseGame;
+	}
+
+	public void ResumeGame()
+	{
+	  // RESUME MY GAME
+	}
+
+	public void PauseGame()
+	{
+	  // PAUSE MY GAME
+	}
+
+	public void ShowAd()
+	{
+	  DistributeGames.Instance.ShowAd();	
+	}
+}</pre>
 
 If you have any technical questions or comments, please email us at:
 info@distributegames.com
