@@ -9,7 +9,7 @@ This repository contains the DistributeGames.com SDK for WebGL Unity3D games. Th
 Drag the prefab "DistributeGames" into your scene. 
 
 # STEP 3:
-Copy your GAME_ID in your DistributeGames developer's control panel (in the Game Management > My games > Our game), at http://distributegames.com/account/
+Copy your GAME_ID in your DistributeGames developer's control panel (in the Game Management > My games > Our game), at https://distributegames.com/account/
 
 # STEP 4:
 Open the prefab and replace the GAME_ID values with your own keys. 
