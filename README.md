@@ -1,4 +1,4 @@
-# DistributeGames.com-SDK
+# DistributeGames.com-SDK WebGL Unity3D
 This repository contains the DistributeGames.com SDK for WebGL Unity3D games. This allows you to display advertisements in the games published within the DistributeGames.com network. https://DistributeGames.com
 
 
