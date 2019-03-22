@@ -56,6 +56,7 @@ Make use of the events DistributeGames.OnResumeGame and DistributeGames.OnPauseG
 	}
 }</pre>
 
+# Support:
 If you have any technical questions or comments, please email us at:
 info@distributegames.com
 
