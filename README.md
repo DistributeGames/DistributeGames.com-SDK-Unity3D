@@ -15,10 +15,10 @@ Drag the prefab "DistributeGames" into your scene.
 
 # STEP 3:
 Copy your GAME_ID in your DistributeGames developer's control panel (in the Game Management > My games > Our game), at https://distributegames.com/account/
-<p><img src="https://distributegames.com/images/unity/unity_1.png"  width="800" alt=""></p>
 
 # STEP 4:
 Open the prefab and replace the GAME_ID values with your own keys. 
+<p><img src="https://distributegames.com/images/unity/unity_1.png"  width="800" alt=""></p>
 
 # STEP 5:
 Use DistributeGames.Instance.ShowAd() to show an advertisement. 
