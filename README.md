@@ -60,6 +60,8 @@ Make use of the events DistributeGames.OnResumeGame and DistributeGames.OnPauseG
 # FAQ
 <p>How to upload a game files?</p>
 <p><b>Answer</b>: When your game is ready to upload, you need to compress all game files to .ZIP file - Root folder of .ZIP file must include index.html and game files</p>
+<h2><b>Implementation self-hosted games.</b></h2>
+<p>In the case where a developer wants to self-host their game, please contact us on at: info@distributegames.com</p>
 
 # Support:
 If you have any technical questions or comments, please email us at:
