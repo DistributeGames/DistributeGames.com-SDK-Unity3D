@@ -6,8 +6,8 @@
 This repository contains the DistributeGames.com SDK for WebGL Unity3D games. This allows you to display advertisements in the games published within the DistributeGames.com network. https://DistributeGames.com
 
 # STEP 1:
-<p><a href="https://drive.google.com/file/d/1MGHAdbfih_l7J0UbAzm_zt2rEW8yq3M-/">Download the plugin</a> and Import the .unitypackage into your game. </p>
-<p>Download here: <a href="https://drive.google.com/file/d/1MGHAdbfih_l7J0UbAzm_zt2rEW8yq3M-/">https://drive.google.com/file/d/14i-5GiS18akqbeEzFTcnOuA4H0WAkHmf/</a></p>
+<p><a href="https://drive.google.com/file/d/1oo2tbYJiV3VmhNOfq3oNQtegmeHobbZx/">Download the plugin</a> and Import the .unitypackage into your game. </p>
+<p>Download here: <a href="https://drive.google.com/file/d/1oo2tbYJiV3VmhNOfq3oNQtegmeHobbZx/">https://drive.google.com/file/d/1oo2tbYJiV3VmhNOfq3oNQtegmeHobbZx/</a></p>
 
 <p><img src="https://distributegames.com/images/unity/unity_2.png"  width="800" alt=""></p>
 
